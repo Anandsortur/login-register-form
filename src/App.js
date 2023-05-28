@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       {
-        currentForm === "login" ? <Login/> : <Register/>
+        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
       }
     </div>
   );
