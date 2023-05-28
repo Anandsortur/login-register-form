@@ -9,7 +9,7 @@ export const Login = () => {
     }
     return(
         <>
-         <form action="">
+         <form onSubmit={handleSubmit}>
             <label htmlFor="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Email"/>
 
@@ -18,7 +18,7 @@ export const Login = () => {
 
             <button>Login</button>
         </form>
-        <button>Don't have an account? Register here.</button>
+        <button onClick={() => props.onForSwitch('register')}>Don't have an account? Register here.</button>
         </>
        
     )
